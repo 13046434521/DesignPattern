@@ -24,7 +24,6 @@ class CarFactory {
                 car = new BYD();
                 break;
             default:
-                car = null;
                 break;
         }
 
