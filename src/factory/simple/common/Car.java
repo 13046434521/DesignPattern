@@ -1,4 +1,4 @@
-package factory.simple;
+package factory.simple.common;
 
 /**
  * @author jtl

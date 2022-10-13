@@ -1,19 +1,19 @@
-package factory.simple;
+package factory.simple.common;
 
 /**
  * @author jtl
- * @date 2021/7/20 16:24
+ * @date 2021/7/20 16:21
  */
 
-class Tesla implements Car {
+class Wuling implements Car {
     @Override
     public void name() {
-        System.out.println("特斯拉");
+        System.out.println("五菱宏光");
     }
 
     @Override
     public void price() {
-        System.out.println("32万");
+        System.out.println("4万");
     }
 
     @Override

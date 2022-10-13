@@ -12,13 +12,11 @@ abstract class Factory {
 + abstract Product createProduct()
 }
 class ConcreteFactory {
-+Product createProduct()
 }
 abstract class Product {
 + abstract void method()
 }
 class ConcreteProduct {
-+ void method()
 }
 
 @enduml
