@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>prototype.Book</OriginalElement>
+  <nodes>
+    <node x="-62.0" y="64.0">prototype.Book</node>
+    <node x="-52.5" y="-14.0">java.lang.Cloneable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="prototype.Book" target="java.lang.Cloneable" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="19.0" y="73.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
