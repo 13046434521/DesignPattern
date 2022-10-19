@@ -5,7 +5,7 @@ package strategy.common;
  * @date：2022/10/14 19:10
  * @detail：具体策略实现类
  */
-class BusStrategy implements PriceStrategy{
+class BusStrategy implements IStrategy {
     @Override
     public int price(int distance) {
         return distance * 2 ;

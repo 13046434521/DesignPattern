@@ -5,6 +5,6 @@ package strategy.common;
  * @date：2022/10/14 19:07
  * @detail：抽象策略类
  */
-interface PriceStrategy {
+interface IStrategy {
     int price(int distance);
 }

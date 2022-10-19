@@ -7,15 +7,16 @@ package strategy.common;
  */
 class Client {
     public static void main(String[] args) {
-        Client client = new Client();
-        int busPrice = client.setStrategy(new BusStrategy(),5);
-        int taxiPrice = client.setStrategy(new TaxiStrategy(),5);
+        Context context = new Context();
 
+        // 切换出行策略乘坐公交车
+        context.setStrategy(new BusStrategy());
+        int busPrice = context.price(5);
         System.out.println("公交车5km价格："+busPrice);
-        System.out.println("出租车5km价格："+taxiPrice);
-    }
 
-    public int setStrategy(PriceStrategy priceStrategy,int distance){
-        return priceStrategy.price(distance);
+        // 切换出行策略乘坐出租车
+        context.setStrategy(new TaxiStrategy());
+        int taxiPrice = context.price(5);
+        System.out.println("出租车5km价格："+taxiPrice);
     }
 }
