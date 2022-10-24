@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>proxy.uml</OriginalElement>
+  <nodes>
+    <node x="-30.0" y="65.33333333333334">proxy.uml.ProxySubject</node>
+    <node x="292.33333333333337" y="77.33333333333334">proxy.uml.RealSubject</node>
+    <node x="14.0" y="-71.99999999999999">proxy.uml.Subject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="proxy.uml.ProxySubject" target="proxy.uml.RealSubject" relationship="TO_ONE">
+      <point x="98.5" y="-0.0" />
+      <point x="361.33333333333337" y="104.33333333333334" />
+      <point x="-0.0" y="27.0" />
+    </edge>
+    <edge source="proxy.uml.ProxySubject" target="proxy.uml.Subject" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="proxy.uml.RealSubject" target="proxy.uml.Subject" relationship="REALIZATION">
+      <point x="-69.0" y="-0.0" />
+      <point x="365.6666666666667" y="104.33333333333334" />
+      <point x="365.6666666666667" y="-44.999999999999986" />
+      <point x="54.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="190.0" y="72.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
