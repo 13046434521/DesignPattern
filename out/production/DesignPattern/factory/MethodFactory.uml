@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>factory.method.common.Car</OriginalElement>
+  <nodes>
+    <node x="171.0" y="144.66666666666666">factory.method.common.BMWFactory</node>
+    <node x="-23.5" y="110.66666666666666">factory.method.common.BMW</node>
+    <node x="-23.5" y="-36.0">factory.method.common.Car</node>
+    <node x="214.75" y="-13.0">factory.method.common.CarFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="factory.method.common.BMWFactory" target="factory.method.common.CarFactory" relationship="REALIZATION">
+      <point x="36.25" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="factory.method.common.BMW" target="factory.method.common.Car" relationship="REALIZATION">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="factory.method.common.BMWFactory" target="factory.method.common.BMW" relationship="CREATE">
+      <point x="-36.25" y="-27.0" />
+      <point x="207.25" y="167.0" />
+      <point x="36.0" y="167.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="46.0" y="151.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
