@@ -6,38 +6,38 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * @author jtl
  * @date 2021/7/20 14:29
- * µ¥ÀıÄ£Ê½²âÊÔTest
+ * å•ä¾‹æ¨¡å¼æµ‹è¯•Test
  */
 
 class Client {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        // 1. ¶àÏß³ÌÇé¿öÏÂµÄ²âÊÔ¡£
-        for (int i = 0; i < 10; i++) {
-            new Thread(() -> {
-                System.out.println(DCLSingle.getInstance().hashCode());
-                System.out.println(LazySingle.getInstance().hashCode());
-            }).start();
-        }
+//        // 1. å¤šçº¿ç¨‹æƒ…å†µä¸‹çš„æµ‹è¯•ã€‚
+//        for (int i = 0; i < 10; i++) {
+//            new Thread(() -> {
+//                System.out.println(DCLSingle.getInstance().hashCode());
+//                System.out.println(LazySingle.getInstance().hashCode());
+//            }).start();
+//        }
+//
+//        // 2. é¥¿æ±‰å¼å ç”¨èµ„æºæµ‹è¯•
+//        for (int i = 0; i < 20; i++) {
+//            try {
+//                System.out.println("å€’è®¡æ—¶ï¼š"+(20-i));
+//                Thread.sleep(1000);
+//
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
-        // 2. ¶öººÊ½Õ¼ÓÃ×ÊÔ´²âÊÔ
-        for (int i = 0; i < 20; i++) {
-            try {
-                System.out.println("µ¹¼ÆÊ±£º"+(20-i));
-                Thread.sleep(1000);
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        // 2. ÀÁººÊ½
+        // 3. åå°„åˆ›å»ºå¯¹è±¡
         Constructor<HolderSingle> holderConstructor = HolderSingle.class.getDeclaredConstructor();
         holderConstructor.setAccessible(true);
         HolderSingle holder = holderConstructor.newInstance(null);
-        System.out.println(holder.hashCode() + "---" + HolderSingle.getInstance());
+        System.out.println(holder.hashCode() + "---" + holder);
 
-        // ²âÊÔÃ¶¾ÙÀàµ¥Àı£¬ÎŞ·¨Í¨¹ı·´Éä»ñÈ¡, Cannot reflectively create enum objects
-        Constructor<EnumSingle> enumSingleConstructor = EnumSingle.class.getDeclaredConstructor(String.class, int.class);//Ã¶¾ÙµÄ¹¹Ôìº¯ÊıÊÇÓĞ²ÎµÄ
+        // æµ‹è¯•æšä¸¾ç±»å•ä¾‹ï¼Œæ— æ³•é€šè¿‡åå°„è·å–, Cannot reflectively create enum objects
+        Constructor<EnumSingle> enumSingleConstructor = EnumSingle.class.getDeclaredConstructor(String.class, int.class);//æšä¸¾çš„æ„é€ å‡½æ•°æ˜¯æœ‰å‚çš„
         enumSingleConstructor.setAccessible(true);
         EnumSingle enumSingle = enumSingleConstructor.newInstance(null);
     }
