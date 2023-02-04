@@ -21,6 +21,10 @@ class Computer{
         mGPU = GPU;
     }
 
+    public static ComputerBuilder createBuilder(){
+        return new ComputerBuilder();
+    }
+
     @Override
     public String toString() {
         return "Computer{" +
@@ -76,7 +80,7 @@ class Computer{
             return this;
         }
 
-        public Computer create(){
+        public Computer build(){
             Computer computer = new Computer(mOS,mBroad,mKeyBoard,mMouse,mCPU,mGPU);
             return computer;
         }

@@ -7,12 +7,12 @@ package builder;
  */
 class Client {
     public static void main(String[] args) {
-        Computer computer = new Computer.ComputerBuilder()
+        Computer computer =Computer.createBuilder()
                 .setCPU("AMD 5600X")
                 .setGPU("NV 3060TI")
                 .setMouse("罗技 MX MASTER3")
                 .setKeyBoard("IQUNIX F97")
-                .create();
+                .build();
 
         System.out.println(computer.toString());
     }

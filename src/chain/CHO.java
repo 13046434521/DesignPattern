@@ -11,11 +11,9 @@ class CHO extends Handler{
     public void handle(int money) {
         if (money<=limit){
             System.out.println("CHO 可以涨："+money);
-            return;
         }else{
             if (nextHandler==null){
                 System.out.println("nextHandler is null");
-                return;
             }else{
                 nextHandler.handle(money);
             }
