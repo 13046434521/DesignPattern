@@ -5,7 +5,7 @@ package factory.simple.common;
  * @date 2021/7/20 16:24
  */
 
-class Tesla implements Car {
+class TSLA implements Car {
     @Override
     public void name() {
         System.out.println("特斯拉");

@@ -18,7 +18,7 @@ class CarFactory {
                 car = new BMW();
                 break;
             case "特斯拉":
-                car = new Tesla();
+                car = new TSLA();
                 break;
             case "比亚迪":
                 car = new BYD();

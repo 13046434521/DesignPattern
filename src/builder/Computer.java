@@ -81,6 +81,12 @@ class Computer{
         }
 
         public Computer build(){
+            // 可以在build方法中做一些校验等其他工作
+            if (mBroad.contains("技嘉")){
+                throw new RuntimeException("技嘉辱华，不支持技嘉主板");
+            }
+
+
             Computer computer = new Computer(mOS,mBroad,mKeyBoard,mMouse,mCPU,mGPU);
             return computer;
         }
