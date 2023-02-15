@@ -5,7 +5,7 @@ package factory.abstraction.reflect;
  * @date：2022/10/13 18:34
  * @detail：
  */
-class ConcreteFactory extends AbstractFactroy{
+class ConcreteFactory extends AbstractFactory {
 
     @Override
     <T extends ProductA> T createProductA(Class<T> clazz) {
