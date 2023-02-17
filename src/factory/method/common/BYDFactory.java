@@ -1,14 +1,13 @@
 package factory.method.common;
 
 /**
- * @author jtl
- * @date 2021/7/20 17:50
- * 具体工厂类
+ * Author（作者）：jtl
+ * Date（日期）：2023/2/8 14:23
+ * Detail（详情）：具体工厂类---比亚迪新能源工厂
  */
-
-class BYDFactory implements CarFactory{
+public class BYDFactory implements IFactory{
     @Override
-    public Car getCar() {
+    public ICar buildCar() {
         return new BYD();
     }
 }

@@ -1,24 +1,16 @@
 package factory.method.common;
 
 /**
- * @author jtl
- * @date 2021/7/20 17:48
- * 工厂方法模式
+ * Author（作者）：jtl
+ * Date（日期）：2023/2/8 14:24
+ * Detail（详情）：工厂方法模式客户端
  */
-
-class Client {
+public class Client {
     public static void main(String[] args) {
-        CarFactory bydFactory = new BYDFactory();
-        Car bydCar=bydFactory.getCar();
-        bydCar.name();
-        bydCar.kind();
-        bydCar.price();
+        BYDFactory bydFactory = new BYDFactory();
+        bydFactory.buildCar().name();
 
-        System.out.println("--------------------");
-        CarFactory bmwFactory = new BMWFactory();
-        Car bmwCar = bmwFactory.getCar();
-        bmwCar.name();
-        bmwCar.kind();
-        bmwCar.price();
+        TSLAFactory tslaFactory = new TSLAFactory();
+        tslaFactory.buildCar().name();
     }
 }
