@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>chain</OriginalElement>
+  <nodes>
+    <node x="315.123515101473" y="16.687275599494072">chain.Leader</node>
+    <node x="164.1898231223996" y="156.3131094212875">chain.CHO</node>
+    <node x="60.49287160056707" y="-13.663068979255375">chain.Handler</node>
+    <node x="-53.78322323781683" y="124.56835616652197">chain.Boss</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="chain.Leader" target="chain.Handler" relationship="GENERALIZATION">
+      <point x="4.848985270200501E-4" y="38.999724400505926" />
+      <point x="385.124" y="126.0" />
+      <point x="109.5" y="126.0" />
+      <point x="109.5" y="95.0" />
+      <point x="144.493" y="95.0" />
+      <point x="1.2839943292419775E-4" y="39.000068979255374" />
+    </edge>
+    <edge source="chain.CHO" target="chain.Handler" relationship="GENERALIZATION">
+      <point x="1.7687760040985268E-4" y="-39.000109421287505" />
+      <point x="234.19" y="126.0" />
+      <point x="109.5" y="126.0" />
+      <point x="109.5" y="95.0" />
+      <point x="144.493" y="95.0" />
+      <point x="1.2839943292419775E-4" y="39.000068979255374" />
+    </edge>
+    <edge source="chain.Boss" target="chain.Handler" relationship="GENERALIZATION">
+      <point x="2.2323781682587196E-4" y="-39.00035616652197" />
+      <point x="16.217" y="95.0" />
+      <point x="144.493" y="95.0" />
+      <point x="1.2839943292419775E-4" y="39.000068979255374" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="211.0" y="120.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
