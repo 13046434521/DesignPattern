@@ -47,6 +47,7 @@ theme: devui-blue
 ![设计模式.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f359fd20608a46e6aeb2900ff32568f8~tplv-k3u1fbpfcp-watermark.image?)
 
 ## 文章导读目录
+
 到这里，是个人准备的文章，**目前还没弄完**。感兴趣的可以**点赞**或者**收藏**一下本文。定期回来看一下。
 
 说到这里，突然想到了观察者模式，你们订阅我一下，等我写完通知你们。可惜掘金没这个功能。
@@ -54,27 +55,35 @@ theme: devui-blue
 不感兴趣的童鞋，可以到此为止了。
 
 准备把所有相关的设计模式文章都写一遍，总结一下。最终在这里弄一个导读目录。目前还没弄完。
-### 1. 单例模式
+
+### 1. [单例模式](src/single)
+
 [面试官，你要跟我聊单例？那我可有话说了](https://juejin.cn/post/7182998457869664316)
-### 2. 建造者模式
+
+### 2. [建造者模式](src/builder)
 
 [Builder模式拯救了我的强迫症](https://juejin.cn/post/7197326179934191676)
-### 3. 原型模式
+
+### 3. [原型模式](src/state)
 
 [设计模式中的Ctrl C和Ctrl V---原型模式](https://juejin.cn/post/7197338006549872695)
-### 4. 工厂方法模式
+
+### 4. [工厂方法模式](src/factory/method)
 
 [讲个故事，看看能不能理解工厂方法模式](https://juejin.cn/post/7197813134991491132)
 
-### 5. 原型模式
+### 5. [抽象工厂模式](src/factory/abstraction)
 
 [几分钟时间，试着学一下抽象工厂模式](https://juejin.cn/post/7200297595473395773)
 
-### 6.模版方法模式
+### 6.[模版方法模式](src/templatemethod)
+
 [用做猪脚面的方式，学习下模版方法模式](https://juejin.cn/post/7199297355748343863)
+
 ### *. 剩下的还没弄......
 
 ## GitHub地址
+
 准备把设计模式相关的代码传到GitHub上。目前还没有更完。
 
 [设计模式GitHub地址](https://github.com/13046434521/DesignPattern.git)

@@ -5,7 +5,7 @@ package templatemethod;
  * Date（日期）：2023/2/10 20:53
  * Detail（详情）：具体模版，CCTV 央视春晚
  */
-public class CCTVSpringFestivalGala extends SpringFestivalGala{
+public class CCTVSpringFestivalGala implements SpringFestivalGala {
     @Override
     public void prologue() {
         System.out.println("开场白：欢迎来到，2023年，央视春晚的现场");

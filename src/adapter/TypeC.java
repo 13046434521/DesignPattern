@@ -1,21 +1,29 @@
 package adapter;
 
 /**
- * Author（作者）：jtl
- * Date（日期）：2023/2/20 00:20
- * Detail（详情）：
+ * 作者：jtl
+ * <p>
+ * 日期：Created in 2023/7/12 0:27
+ * <p>
+ * 描述：TypeC接口，可以传输数据
  */
-public class TypeC {
-    public String data ="";
 
-    public TypeC(String data) {
-        this.data = data;
+class TypeC {
+    private FileTxt fileTxt = null;
+
+    /**
+     * 传输数据
+     *
+     * @param fileTxt 传入的文件
+     */
+    public void transferFile(FileTxt fileTxt) {
+        this.fileTxt = fileTxt;
     }
 
-    public void putData(String data){
-        this.data = data;
-    }
-    public String getData() {
-        return data;
+    /**
+     * @return 传出的文件
+     */
+    public FileTxt getFile() {
+        return fileTxt;
     }
 }

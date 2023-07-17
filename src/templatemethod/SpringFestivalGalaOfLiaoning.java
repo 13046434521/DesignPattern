@@ -5,7 +5,7 @@ package templatemethod;
  * Date（日期）：2023/2/10 20:42
  * Detail（详情）：具体模版，辽宁春晚
  */
-public class SpringFestivalGalaOfLiaoning extends SpringFestivalGala{
+public class SpringFestivalGalaOfLiaoning implements SpringFestivalGala {
     @Override
     public void prologue() {
         System.out.println("开场白：欢迎来到，2023年，辽宁卫视春晚现场");
