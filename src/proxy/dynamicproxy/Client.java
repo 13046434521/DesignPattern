@@ -3,16 +3,20 @@ package proxy.dynamicproxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.Hashtable;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Author（作者）：jtl
  * Date（日期）：2023/2/16 20:43
  * Detail（详情）：动态代理客户端，分离代理行为与被代理类
  *               可以在不改变原有类的基础上，修改类中的方法行为
+ *               不用手动生成代理类。
  */
 public class Client {
     public static void main(String[] args) {
         FaceSession faceSession = new FaceSession();
+
 
         // 用来输出，动态代理类的对象
         System.getProperties().put("jdk.proxy.ProxyGenerator.saveGeneratedFiles","true");

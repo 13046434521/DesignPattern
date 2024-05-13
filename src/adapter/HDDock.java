@@ -7,13 +7,13 @@ package adapter;
  */
 public class HDDock {
     private TypeC typeC = null;
-    private HDMI hdmi = new HDMI();
+    private final HDMI hdmi = new HDMI();
     public void linkType(TypeC typeC){
        this.typeC = typeC;
     }
 
     public void typeC2Hdmi(){
-        hdmi.setData(typeC.data);
+//        hdmi.setData(typeC.data);
     }
 
     public TypeC getTypeC(){

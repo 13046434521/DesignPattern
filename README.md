@@ -79,8 +79,15 @@ theme: devui-blue
 ### 6.[模版方法模式](src/templatemethod)
 
 [用做猪脚面的方式，学习下模版方法模式](https://juejin.cn/post/7199297355748343863)
-
 ### *. 剩下的还没弄......
+### 7.[适配器模式](src/adapter)
+### 8.[责任链模式](src/chain)
+### 9.[装饰器模式](src/decorator)
+### 10.[享原模式](src/flyweight)
+### 11.[观察者模式](src/observer)
+### 12.[代理模式](src/proxy)
+### 13.[状态模式](src/state)
+### 14.[策略模式](src/strategy)
 
 ## GitHub地址
 

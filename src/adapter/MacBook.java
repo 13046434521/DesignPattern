@@ -6,12 +6,12 @@ package adapter;
  * Detail（详情）：
  */
 public class MacBook {
-    private TypeC typeC = new TypeC("传输信号");
+    private final TypeC typeC = new TypeC();
     public TypeC typeC(){
         return typeC;
     }
 
     public void setData(String data){
-        typeC.data = data;
+//        typeC.data = data;
     }
 }
